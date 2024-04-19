@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Consultas Médicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Agendamento de Consultas Médicas</h1>
+        </div>
+    </header>       
+    
+     <!-- Campos para realizar o agendamento  -->
+    <section>
+        <div class="agendar-consulta">
+            <h2>Agendar Consulta</h2>
+            <form id="consulta-form" >
+                <label for="id_paciente">Insira o nome do Paciente:</label>
+                <input type="text" id="id_paciente"><br><br>
+                <label for="id_medico">Insira o nome do Médico:</label>
+                <input type="text" id="id_medico"><br><br>
+                <label for="date">Data:</label>
+                <input type="date" id="data"><br><br>
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario"><br><br>
+                <button onclick="newItem()" id="btn-agendar">Agendar</button>
+            </form>
+        </div>
+    </section>
+
+     <!-- Campo para realizar o cancelamento  -->
+    
+       
+    <section>
+        <table id="consultas-tabela">
+            <h2>Dados do Agendamento</h2>
+                <tr>
+                    <th>Nome do Paciente</th>
+                    <th>Nome do Médico</th>
+                    <th>Data-Horário</th>
+                   
+                </tr>
+            </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
